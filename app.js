@@ -6,7 +6,7 @@ const app = express();
 app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static('public'));
-mongoose.connect("mongodb+srv://Admin-shashi:lol-123@cluster0.oi4eg.mongodb.net/todolistDB",{useNewUrlParser:true});
+mongoose.connect("mongodb+srv://Admin-shashi:<password>@cluster0.oi4eg.mongodb.net/todolistDB",{useNewUrlParser:true});
 const itemsSchema ={
   name: String
 };
